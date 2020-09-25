@@ -1,0 +1,370 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	background-image: url(../images/night2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+#header{
+	height: 100vh;
+	
+}
+#container{
+	
+
+}
+#start{
+	text-align: center;
+	padding-top: 25vh;
+	font-size: 500%;
+	text-shadow: -6px -6px 5px #2a3435d9;
+	
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	animation: doup 3s 1;
+}
+@keyframes doup{
+	0%{
+		visibility: visible;
+		opacity: 0;
+		padding-top: 75vh;
+	}
+	100%{
+		visibility: visible;
+		opacity: 1;
+		padding-top: 25vh;
+	}
+}
+
+.greeting{
+	margin-top: 17vh;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+
+.up{
+	margin: 1%;
+	font-size: 250%;
+	text-shadow: 2px 2px 3px #2a3435d9;
+	margin-bottom: -5%;
+}
+.up pre{
+	font-family: "Sofia",cursive;
+}
+.down{
+	margin: 1%;
+	font-size: 150%;
+	text-shadow: 1.5px 1.5px 2.5px #2a3435d9;
+}
+
+
+#sidenav{
+	width: 230px;
+	height: 100vh;
+	position:fixed;
+	right: 0px;
+	top:0;
+	background-color: #000000ad;
+	/*background-image: linear-gradient(to bottom, #0a2327c2, #184a48ad);*/
+	z-index: 1;
+	transition: 0.3s;
+}
+nav>ul{
+	margin-top: 125px;
+}
+nav ul li{
+	list-style: none;
+	
+	color: white;
+	margin: 20px 15px;
+	font-size: 2em;
+
+}
+
+
+nav>ul>li>ul>li{
+	margin: 10px 20px;
+	margin-right: 30px;
+	font-size: .75em;
+
+}
+
+nav a{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	padding: .25em;
+	
+}
+nav>ul>li:first-child{
+
+}
+
+#ham{
+	position: fixed;
+	top: 1em;
+	right: 2em;
+	width: 1.75em;
+	height: 1.5em;
+	font-size: 1.5em;
+	z-index: 2;
+ 	border: 2px solid #fff;
+ 	background-color: transparent;
+ 	border-radius: 5px;
+	color: white;
+}
+.inside{
+	transform: translateX(230px);
+}
+nav a:hover{
+	border:2px solid #fff;
+	border-radius: 5px;
+}
+
+#me{
+	width: 90%;
+	margin: 0 5%;
+	margin-top: 10%;
+	background: #fff;
+	text-shadow: 4px 4px 3px #2a3435d9;
+	box-shadow: -13px -13px 70px #2a3435d9;
+	background-image: linear-gradient(to bottom right, #2a3435, #000000);
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.Me{
+
+	text-align: center;
+	justify-content: center;
+	margin: .5em;
+	
+	
+}
+.Me h2{
+	font-family: 'Princess Sofia', cursive;
+	margin-top: .5em;
+	margin-left: .25em;
+	font-size: 6em;
+}
+.Me h3{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin:.5em;
+	font-size: 3em;
+
+}
+.Me hr{
+border: 1px solid #fff;
+margin-left: .25em;
+}
+.pic{
+
+}
+.circle{
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	background-image: url(../images/me.jpeg);
+	background-position: center;
+	background-size: cover;
+	text-shadow: 6px 6px 3px #ffffffcd;
+	box-shadow: -3px -3px 20px #ffffffcd;
+}
+#mid{
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#left-col,#right-col{
+	display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  background: #fff;
+	text-shadow: 2px 2px 1.5px #2a3435d9;
+	box-shadow: -6px -6px 35px #2a3435d9;
+	background-image: linear-gradient(to bottom right, #2a3435, #000000);
+	border-radius: 10px;
+	margin: 1em;
+  padding: 1em;
+}
+.abtme{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 4.25em;
+	padding: .30em;
+	text-shadow: -4px -4px 6px #2a3435d9;
+	text-decoration: underline;
+}
+#mid p{
+	font-family: 'Dancing Script', cursive;
+	font-size:1.5em;
+}
+.progress{
+	margin: 0.5em;
+	margin-top: 1em; 
+}
+#right-col progress{
+	width: 50%;
+}
+
+#pics{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.ite{
+	width: 15%;
+	height: 40vh;
+	flex:1;
+	margin: 0.75em;
+	border:red;
+	border-radius: 10px;
+	text-shadow: 5px 5px 3px #2a3435;
+	box-shadow: -12px -12px 70px #2a3435;
+	border: 2.5px solid #fff;
+	box-shadow: inset -1.5px -1.5px 15px #000;
+
+
+
+}
+.p1{
+	background-image: url(../images/summer.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.p2{
+	background-image: url(../images/fall.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.p3{
+	background-image: url(../images/winter.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.p4{
+	background-image: url(../images/spring.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+
+footer{
+	background-color: #e3edf7;
+}
+footer h4{
+	font-size: 200%;
+	padding: 0.5%;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #555;
+}
+.social-media{
+	display: flex;
+	justify-content: center;
+}
+.social-media a{
+	display: flex;
+	background: #e3edf7;
+	height: 75px;
+	width: 75px;
+	margin: 15px 15px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+				-6px -6px 10px -1px rgba(255,255,255,0.7);
+	border: 1px solid rgba(0,0,0,0);
+	transition: transform 0.5s;
+}
+a i{
+	font-size: 35px;
+	color: #777;
+	transition: transform 0.5s;
+}
+.social-media a:hover{
+	box-shadow: inset 4px 4px 4px -1px rgba(0,0,0,0.15),
+				inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+					-0.5px -0.5px 0px rgba(255,255,255,1),
+					0.5px 0.5px 0px rgba(0,0,0,0.15),
+					0px 12px 10px -10px rgba(0,0,0,0.05);
+	border: 1px solid rgba(0,0,0,0.1);
+	transform: translateY(2px);
+
+}
+
+.social-media a:hover i{
+	transform: scale(0.90);
+}
+
+.social-media a:hover .fa-facebook{
+	color: #3b5998;
+}
+.social-media a:hover .fa-twitter{
+	color: #00acee;
+}
+.social-media a:hover .fa-whatsapp{
+	color: #4fce5d;
+}
+.social-media a:hover .fa-instagram{
+	color: #f14843;
+}
+.social-media a:hover .fa-youtube{
+	color: #f00;
+}
+
+@media screen and (max-width: 1060px){
+#me{
+		justify-content: center;
+		align-content: center;
+	}
+}
+@media screen and (max-width: 800px){
+#start
+	{
+		font-size: 400%;
+	}
+.up{
+	font-size: 200%;
+}
+.down{
+	font-size: 150%;
+}
+#me{
+		flex-direction: column;
+}
+
+.pic{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+#pics{
+	flex-direction: column;
+	height: 200vh;
+}
+.ite{
+	width: 70%;
+}
+#mid{
+	flex-direction: column;
+}
+}
